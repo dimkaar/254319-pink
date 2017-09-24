@@ -6,33 +6,38 @@
   </head>
   <body>
 
-    <header class="main-header main-header--smaller container">
-      <nav class="container main-nav main-nav--opened main-nav--no-js">
-        <div class="main-nav__item">
-          <a href="#" class="logo-link">
-            <picture>
-              <img src="" alt="Логотип приложения Pink" class="logo-link__img">
-            </picture>
-          </a>
-          <button class="main-nav__toggle" type="button">Открыть/закрыть меню</button>
-        </div>
-        <ul class="nav-list">
-          <li class="nav-list__item"><a href="index.html" class="nav-list__link">Главная</a></li>
-          <li class="nav-list__item"><a class="nav-list__link">Фотографии</a></li>
-          <li class="nav-list__item"><a href="competition.html" class="nav-list__link">Конкурс</a></li>
-          <li class="nav-list__item"><a href="http://htmlacademy.ru" class="nav-list__link">HTML Academy</a></li>
-        </ul>
-      </nav>
-      <b class="promo-text">Фотографии пользователей</b>
+    <header class="main-header main-header--smaller">
+      <div class="container">
+        <nav class="container main-nav main-nav--opened main-nav--no-js">
+          <div class="main-nav__item">
+            <a href="#" class="logo-link">
+              <svg class="logo-link__img"></svg>
+            </a>
+            <button class="main-nav__toggle" type="button">Открыть/закрыть меню</button>
+          </div>
+          <ul class="nav-list">
+            <li class="nav-list__item"><a href="index.html" class="nav-list__link">Главная</a></li>
+            <li class="nav-list__item"><a class="nav-list__link">Фотографии</a></li>
+            <li class="nav-list__item"><a href="competition.html" class="nav-list__link">Конкурс</a></li>
+            <li class="nav-list__item"><a href="http://htmlacademy.ru" class="nav-list__link">HTML Academy</a></li>
+          </ul>
+        </nav>
+        <h2 class="promo-text">Фотографии пользователей</h2>
+      </div>
     </header>
 
     <main class="main">
-      <p class="main__text container">
-        Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
-      </p>
+      <div class="container">
+        <p class="main__text">
+          Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
+        </p>
+      </div>
+
       <article class="post">
         <a href="#" class="post__link">
-          <img src="" alt="Фотография пользователя" class="post__img">
+          <picture>
+            <img src="" alt="Фотография пользователя" class="post__img">
+          </picture>
         </a>
         <p class="post__text post__text--author">Анна
           <span class="post__text post__text--time">5 минут назад</span>
@@ -45,145 +50,162 @@
         </p>
       </article>
 
-      <section class="section--white container section-photos">
-        <article class="post">
-          <a href="#" class="post__link">
-            <img src="" alt="Фотография пользователя" class="post__img">
-          </a>
-          <p class="post__text post__text--author">Левон
-            <span class="post__text post__text--time">5 часов назад</span>
-          </p>
-          <p class="post__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-          <p class="post__text post__text--like">Нравится:
-            <span class="post__likes">356</span>
-          </p>
-        </article>
+      <div class="container">
+        <section class="section section--white section-photos">
+          <article class="post">
+            <a href="#" class="post__link">
+              <picture>
+                <img src="" alt="Фотография пользователя" class="post__img">
+              </picture>
+            </a>
+            <p class="post__text post__text--author">Левон
+              <span class="post__text post__text--time">5 часов назад</span>
+            </p>
+            <p class="post__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            <p class="post__text post__text--like">Нравится:
+              <span class="post__likes">356</span>
+            </p>
+          </article>
 
-        <article class="post">
-          <a href="#" class="post__link">
-            <img src="" alt="Фотография пользователя" class="post__img">
-          </a>
-          <p class="post__text post__text--author">Антон
-            <span class="post__text post__text--time">12 часов назад</span>
-          </p>
-          <p class="post__text">Соседи будут рады!</p>
-          <p class="post__text post__text--like">Нравится:
-            <span class="post__likes">666</span>
-          </p>
-        </article>
+          <article class="post">
+            <a href="#" class="post__link">
+              <picture>
+                <img src="" alt="Фотография пользователя" class="post__img">
+              </picture>
+            </a>
+            <p class="post__text post__text--author">Антон
+              <span class="post__text post__text--time">12 часов назад</span>
+            </p>
+            <p class="post__text">Соседи будут рады!</p>
+            <p class="post__text post__text--like">Нравится:
+              <span class="post__likes">666</span>
+            </p>
+          </article>
 
-        <article class="post">
-          <a href="#" class="post__link">
-            <img src="" alt="Фотография пользователя" class="post__img">
-          </a>
-          <p class="post__text post__text--author">Антон
-            <span class="post__text post__text--time">12 часов назад</span>
-          </p>
-          <p class="post__text post__text">Соседи будут рады!</p>
-          <p class="post__text post__text--like">Нравится:
-            <span class="post__likes">666</span>
-          </p>
-        </article>
+          <article class="post">
+            <a href="#" class="post__link">
+              <picture>
+                <img src="" alt="Фотография пользователя" class="post__img">
+              </picture>
+            </a>
+            <p class="post__text post__text--author">Антон
+              <span class="post__text post__text--time">12 часов назад</span>
+            </p>
+            <p class="post__text post__text">Соседи будут рады!</p>
+            <p class="post__text post__text--like">Нравится:
+              <span class="post__likes">666</span>
+            </p>
+          </article>
 
-        <article class="post">
-          <a href="#" class="post__link">
-            <img src="" alt="Фотография пользователя" class="post__img">
-          </a>
-          <p class="post__text post__text--author">Борис
-            <span class="post__text post__text--time">20 часов назад</span>
-          </p>
-          <p class="post__text post__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-          <p class="post__text post__text--like">Нравится:
-            <span class="post__likes">215</span>
-          </p>
-        </article>
+          <article class="post">
+            <a href="#" class="post__link">
+              <picture>
+                <img src="" alt="Фотография пользователя" class="post__img">
+              </picture>
+            </a>
+            <p class="post__text post__text--author">Борис
+              <span class="post__text post__text--time">20 часов назад</span>
+            </p>
+            <p class="post__text post__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+            <p class="post__text post__text--like">Нравится:
+              <span class="post__likes">215</span>
+            </p>
+          </article>
 
-        <article class="post">
-          <a href="#" class="post__link">
-            <img src="" alt="Фотография пользователя" class="post__img">
-          </a>
-          <p class="post__text post__text--author">Сергей
-            <span class="post__text post__text--time">25 часов назад</span>
-          </p>
-          <p class="post__text">Самая кубанская в мире!</p>
-          <p class="post__text post__text--like">Нравится:
-            <span class="post__likes">4</span>
-          </p>
-        </article>
+          <article class="post">
+            <a href="#" class="post__link">
+              <picture>
+                <img src="" alt="Фотография пользователя" class="post__img">
+              </picture>
+            </a>
+            <p class="post__text post__text--author">Сергей
+              <span class="post__text post__text--time">25 часов назад</span>
+            </p>
+            <p class="post__text">Самая кубанская в мире!</p>
+            <p class="post__text post__text--like">Нравится:
+              <span class="post__likes">4</span>
+            </p>
+          </article>
 
-        <article class="post">
-          <a href="#" class="post__link">
-            <img src="" alt="Фотография пользователя" class="post__img">
-          </a>
-          <p class="post__text--author">Максим
-            <span class="post__text post__text--time">40 часов назад</span>
-          </p>
-          <p class="post__text">Где снег-то?</p>
-          <p class="post__text post__text--like">Нравится:
-            <span class="post__likes">150</span>
-          </p>
-        </article>
+          <article class="post">
+            <a href="#" class="post__link">
+              <picture>
+                <img src="" alt="Фотография пользователя" class="post__img">
+              </picture>
+            </a>
+            <p class="post__text--author">Максим
+              <span class="post__text post__text--time">40 часов назад</span>
+            </p>
+            <p class="post__text">Где снег-то?</p>
+            <p class="post__text post__text--like">Нравится:
+              <span class="post__likes">150</span>
+            </p>
+          </article>
 
-        <article class="post">
-          <a href="#" class="post__link">
-            <img src="" alt="Фотография пользователя" class="post__img">
-          </a>
-          <p class="post__text--author">Надежда
-            <span class="post__text post__text--time">45 часов назад</span>
-          </p>
-          <p class="post__text">Всем GM и взаимные лайки!</p>
-          <p class="post__text post__text--like">Нравится:
-            <span class="post__likes">2560</span>
-          </p>
-        </article>
-      </section>
+          <article class="post">
+            <a href="#" class="post__link">
+              <picture>
+                <img src="" alt="Фотография пользователя" class="post__img">
+              </picture>
+            </a>
+            <p class="post__text--author">Надежда
+              <span class="post__text post__text--time">45 часов назад</span>
+            </p>
+            <p class="post__text">Всем GM и взаимные лайки!</p>
+            <p class="post__text post__text--like">Нравится:
+              <span class="post__likes">2560</span>
+            </p>
+          </article>
+        </section>
 
-      <p class="main__text container">
-        Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!
-      </p>
+        <p class="main__text">
+          Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!
+        </p>
+      </div>
+      <section class="section section--grey editor">
+        <div class="container">
+          <form action="http://echo.htmlacademy.ru" method="get" class="editor__form">
+            <img src="" alt="Редактируемая фотография" class="editor__img">
 
-      <section class="section--grey container editor">
-        <form action="echo.htmlacademy.ru" method="get" class="editor__form">
-          <img src="" alt="Редактируемая фотография" class="editor__img">
+            <div class="editor__controls-wrapper">
+              <label for="editor-control1" class="editor__lable">Кадрирование фото</label>
+              <input type="radio" class="editor__control" name="editor-control" id="editor-control1">
+              <label for="editor-control2" class="editor__lable">Фильтры</label>
+              <input type="radio" class="editor__control" name="editor-control" id="editor-control2">
+              <label for="editor-control3" class="editor__lable">Контростность</label>
+              <input type="radio" class="editor__control" name="editor-control" id="editor-control3">
+            </div>
 
-          <div class="editor__controls-wrapper">
-            <label for="editor-control1" class="editor__lable">Кадрирование фото</label>
-            <input type="radio" class="editor__control" name="editor-control" id="editor-control1">
-            <label for="editor-control2" class="editor__lable">Фильтры</label>
-            <input type="radio" class="editor__control" name="editor-control" id="editor-control2">
-            <label for="editor-control3" class="editor__lable">Контростность</label>
-            <input type="radio" class="editor__control" name="editor-control" id="editor-control3">
-          </div>
+            <div class="editor__range-wrapper">
+              <div class="editor__bar"></div>
+              <div class="editor__bar"></div>
+              <div class="editor__bar"></div>
+            </div>
 
-          <div class="editor__range-wrapper">
-            <div class="editor__bar"></div>
-            <div class="editor__bar"></div>
-            <div class="editor__bar"></div>
-          </div>
-
-          <div class="editor__buttons-wrapper">
-            <button class="btn btn--active editor__btn" type="submit">Запостить</button>
-            <button class="btn btn--not-active editor__btn" type="reset">Отменить</button>
-          </div>
-        </form>
+            <div class="editor__buttons-wrapper">
+              <button class="btn btn--active editor__btn">Запостить</button>
+              <button class="btn btn--not-active editor__btn" type="reset">Отменить</button>
+            </div>
+          </form>
+        </div>
       </section>
     </main>
 
     <footer class="main-footer main-footer--white-cover">
-      <section class="container main-footer__content">
-        <a href="#" class="logo-link logo-link--red">
-          <picture>
-            <img src="" alt="Логотип приложения Pink" class="logo-link__img">
-          </picture>
-        </a>
+      <div class="container">
+        <section class="container main-footer__content">
+          <a href="#" class="logo-link logo-link--red">
+            <svg class="logo-link__img"></svg>
+          </a>
 
-        <div class="social-block">
-          <a href="#" class="social-link social-link--tw" title="Ссылка на Twitter">Twitter</a>
-          <a href="#" class="social-link social-link--fb" title="Ссылка на Facebook">Facebook</a>
-          <a href="#" class="social-link social-link--gp" title="Ссылка на Google Play">Google Play</a>
-        </div>
-        <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright-link">Разработано <span class="visually-hidden">HTML Academy</span></a>
-      </section>
+          <div class="social-block">
+            <a href="#" class="social-link social-link--tw" title="Ссылка на Twitter">Twitter</a>
+            <a href="#" class="social-link social-link--fb" title="Ссылка на Facebook">Facebook</a>
+            <a href="#" class="social-link social-link--gp" title="Ссылка на Google Play">Google Play</a>
+          </div>
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright-link">Разработано <span class="visually-hidden">HTML Academy</span></a>
+        </section>
+      </div>
     </footer>
   </body>
 </html>
