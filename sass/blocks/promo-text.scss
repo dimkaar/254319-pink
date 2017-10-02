@@ -1,0 +1,19 @@
+.promo-text {
+  display: block;
+  margin-bottom: 30px;
+
+  font-size: $biggest-font-size;
+  line-height: $base-line-height;
+  font-weight: 300;
+  text-align: center;
+}
+
+.promo-text--no-margin {
+  margin: 0;
+}
+
+.promo-text--no-margin-line-height {
+  margin: 0;
+
+  line-height: $biggest-line-height;
+}

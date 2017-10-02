@@ -1,0 +1,20 @@
+body {
+  position: relative;
+
+  width: 100%;
+  min-width: 320px;
+  box-sizing: border-box;
+
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  color: $navy;
+
+  background-color: white;
+
+  /*@media (min-width: 768px) {
+  }
+
+  @media (min-width: 1024px) {
+  }*/
+}

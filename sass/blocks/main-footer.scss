@@ -1,0 +1,35 @@
+.main-footer {
+  position: relative;
+}
+
+.main-footer--white-cover {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+
+    width: 320px;
+    height: 35px;
+
+    background-image: url("../img/bg-triangle-white-footer.svg");
+    background-size: contain;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+  }
+}
+
+.main-footer__content {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  .container {
+    align-items: center;
+  }
+}
+
+.main-footer__content--no-display {
+  display: none;
+}

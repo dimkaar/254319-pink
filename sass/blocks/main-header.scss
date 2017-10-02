@@ -1,0 +1,42 @@
+.main-header {
+  position: relative;
+
+  padding-top: 175px;
+  padding-bottom: 30px;
+
+  color: white;
+
+  background-color: $dark-navy;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+
+  @media (min-resolution: 1.5dppx) {
+    //background-image: url("../img/");
+  }
+}
+
+.main-header--smaller {
+  padding-top: 100px;
+  padding-bottom: 85px;
+}
+
+.main-header--no-js {
+  margin-top: 265px;
+}
+
+.main-header__content-wrapper {
+  padding-top: 28px;
+}
+
+.main-header__btn {
+  margin-bottom: 30px;
+  padding-top: 17px;
+  padding-bottom: 14px;
+}
+
+.main-header__text {
+  margin: 0;
+
+  text-align: center;
+}

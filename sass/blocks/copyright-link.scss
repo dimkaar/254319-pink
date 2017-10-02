@@ -1,0 +1,24 @@
+.copyright-link {
+  display: flex;
+  align-items: center;
+
+  line-height: $smaller-line-height;
+  color: $navy;
+  text-decoration: none;
+}
+
+.copyright-link__img {
+  height: 34px;
+  margin-left: 25px;
+
+  fill: $pink;
+
+  &:hover {
+    fill: $navy;
+  }
+
+  &:active {
+    fill: $navy;
+    opacity: 0.3;
+  }
+}

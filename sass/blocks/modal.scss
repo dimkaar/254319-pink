@@ -1,0 +1,27 @@
+.modal {
+  display: none;
+  position: absolute;
+  top: 43%;
+  left: 0;
+
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 50px;
+
+  background-color: white;
+  box-shadow: 0 5px 15px 5px $lighten-grey;
+}
+
+.modal--confirm {
+  top: 60%;
+}
+
+.modal--no-padding {
+  padding-bottom: 0;
+}
+
+.modal__text {
+  margin-top: 15px;
+  margin-bottom: 40px;
+  text-align: center;
+}

@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  width: 87.5%;
+  margin: 0 auto;
+}
+
+.container--column {
+  flex-direction: column;
+}
+
+.container--padding {
+  width: 100%;
+  padding: 50px 6.25%;
+  box-sizing: border-box;
+}

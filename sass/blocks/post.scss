@@ -1,0 +1,79 @@
+.post {
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  background-color: $grey;
+}
+
+.post--no-margin {
+  margin-bottom: 0;
+}
+
+.post--container {
+  background-color: white;
+
+  .container {
+    padding: 25px 17px;
+    box-sizing: border-box;
+
+    background-color: $grey;
+  }
+}
+
+.post__link {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.post__img {
+  display: block;
+  width: 100%;
+}
+
+.post__content-wrapper {
+  padding: 25px 17px;
+  box-sizing: border-box;
+}
+
+.post__text {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.post__text--author {
+  font-weight: 700;
+}
+
+.post__text--time {
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.post__text--like {
+  position: relative;
+
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 8px;
+  padding-left: 30px;
+
+  color: $pink;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 0;
+
+    width: 13px;
+    height: 13px;
+
+    background-image: url("../img/icon-heart.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50%;
+  }
+}

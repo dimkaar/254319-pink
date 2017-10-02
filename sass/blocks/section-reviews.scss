@@ -1,0 +1,42 @@
+.section-reviews {
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+
+.section-reviews__slider {
+  width: 100%;
+
+  .slider__control {
+    &:first-of-type {
+      border: 3px solid $navy;
+    }
+  }
+}
+
+.section-reviews__slide {
+  display: none;
+
+  text-align: center;
+
+  &:first-of-type {
+    display: block;
+  }
+}
+
+.section-reviews__author {
+  display: block;
+  margin-bottom: 25px;
+  font-size: $bigger-font-size;
+  line-height: $biggest-line-height;
+  font-weight: 700;
+  font-style: normal;
+  color: black;
+}
+
+.section-reviews__author-info {
+  display: none;
+}
+
+.section-reviews__quote-text {
+  margin-bottom: 35px;
+}

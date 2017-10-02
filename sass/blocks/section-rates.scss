@@ -1,0 +1,23 @@
+.section-rates {
+  padding-top: 90px;
+  padding-bottom: 60px;
+
+  overflow: hidden;
+}
+
+.section-rates__slide {
+  width: 840px;
+  margin-left: -280px;
+}
+
+.section-rates__slider {
+  .slider__control {
+    &:nth-of-type(2) {
+      border: 3px solid $navy;
+    }
+  }
+}
+
+.section-rates__controls-wrapper {
+  top: 90%;
+}
