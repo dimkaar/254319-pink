@@ -8,7 +8,7 @@
   </head>
   <body>
 
-    <header class="main-header main-header--no-js">
+    <header class="main-header main-header--no-js main-header--double-image">
       <nav class="main-nav main-nav--opened main-nav--no-js">
         <div class="main-nav__item">
           <a href="#" class="logo-link">
@@ -36,9 +36,9 @@
             <a href="http://htmlacademy.ru" class="nav-list__link">HTML Academy</a></li>
         </ul>
       </nav>
-      <img src="img/iphone-hand-mobile@1x.png" alt="Изображение программы" class="main-header__product-img">
       <div class="main-header__content-wrapper container container--column">
         <h1 class="visually-hidden">Сайт приложения Pink</h1>
+        <b class="promo-text main-header__promo-text">Взгляните на жизнь иначе!</b>
         <a href="#" class="btn btn--rounded main-header__btn">Скачать приложение</a>
         <div class="main-header__links-wrapper download">
           <a href="#" class="download__link download__link--ios">Скачать в iTunes</a>
@@ -53,35 +53,45 @@
 
     <main class="main">
       <section class="section section-promo">
-        <div class="container container--column">
-          <b class="promo-text">Устали от серости мегаполиса?</b>
-          <b class="promo-text">Нам есть, что вам предложить!</b>
+        <div class="container container--column section-promo__container">
+          <b class="promo-text promo-text--no-margin-tablet">Устали от серости мегаполиса?</b>
+          <b class="promo-text">Нам есть, что вам<br> предложить!</b>
         </div>
       </section>
 
       <section class="section section--grey section--gradient-top section-info">
-        <div class="container container--column">
+        <div class="container container--column section-info__container">
           <h2 class="visually-hidden">Преимущества приложения</h2>
-          <h3 class="third-title">Поднимает настроение</h3>
+          <h3 class="third-title section-info__title">Поднимает настроение</h3>
           <p class="section-info__text">
-            Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-          <h3 class="third-title">Меняет мир вокруг</h3>
+            Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+            <img src="img/iphone-screen-mobile@1x.png" alt="Фотография изображения" class="section-info__img section-info__img--no-display">
+          </p>
+          <h3 class="third-title section-info__title">Меняет мир вокруг</h3>
           <p class="section-info__text">
-            Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-          <h3 class="third-title">Заводит новых друзей</h3>
+            Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+            <img src="img/iphone-screen-mobile@1x.png" alt="Фотография изображения" class="section-info__img section-info__img--no-display"></p>
+          <h3 class="third-title section-info__title">Заводит новых друзей</h3>
           <p class="section-info__text">
-            Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+            Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых
+            <img src="img/iphone-screen-mobile@1x.png" alt="Фотография изображения" class="section-info__img">
+          </p>
+
         </div>
       </section>
 
       <section class="section section--white-grey section-effects">
-        <b class="promo-text section-effects__promo-text">Эффект на 24 часа!</b>
-        <p class="section-effects__text"></p>
-        <a href="#" class="section-effects__more-link"></a>
+        <div class="container container--column section-effects__container">
+          <b class="section-effects__title">Эффект на&nbsp;24&nbsp;часа!</b>
+          <p class="section-effects__text">
+            Британские ученые провели исследования и доказали, что&nbsp;положительный эффект от использования приложения длится целые&nbsp;сутки!
+          </p>
+          <a href="#" class="section-effects__more-link">Узнать больше об исследовании</a>
+        </div>
       </section>
 
       <section class="section section-reviews">
-        <div class="container">
+        <div class="container section-reviews__container">
           <section class="slider section-reviews__slider">
             <input type="radio" name="review-slide" id="review-slide1" checked>
             <input type="radio" name="review-slide" id="review-slide2">
@@ -110,7 +120,7 @@
               </blockquote>
             </div>
             <div class="slider__controls-wrapper section-reviews__controls-wrapper">
-              <label for="review-slide1" class="slider__control">Слайд №1</label>
+              <label for="review-slide1" class="slider__control slider__control--active">Слайд №1</label>
               <label for="review-slide2" class="slider__control">Слайд №2</label>
               <label for="review-slide3" class="slider__control">Слайд №3</label>
               <button class="slider__btn slider__btn--left">Назад</button>
@@ -121,7 +131,7 @@
       </section>
 
       <section class="section section--grey section--gradient-top section-rates">
-        <div class="container">
+        <div class="container section-rates__container">
           <section class="slider section-rates__slider">
             <h2 class="visually-hidden">Тарифы</h2>
             <input type="radio" name="rates-slide" id="rates-slide1">
@@ -134,16 +144,16 @@
                     <th class="table__header table__header--hidden">
                     </th>
                     <th class="table__header">
-                      <h3 class="product__name">База</h3>
+                      <b class="product__name">База</b>
                       <p class="product__price">1,99 USD</p>
                     </th>
                     <th class="table__header">
-                      <h3 class="product__name">Стандарт</h3>
+                      <b class="product__name">Стандарт</b>
                       <p class="product__price">3,99 USD</p>
                       <p class="product__diagonal-text">Хит</p>
                     </th>
                     <th class="table__header">
-                      <h3 class="product__name">Анлим</h3>
+                      <b class="product__name">Анлим</b>
                       <p class="product__price">9,99 USD</p>
                     </th>
                   </tr>
@@ -180,13 +190,13 @@
                       <p class="product__feature product__feature--hidden">Комментарии</p>
                     </td>
                     <td class="table__cell">
+                      <p class="product__feature product__feature--cross">Комментарии</p>
+                    </td>
+                    <td class="table__cell">
+                      <p class="product__feature product__feature--cross">Комментарии</p>
+                    </td>
+                    <td class="table__cell">
                       <p class="product__feature product__feature--tick">Комментарии</p>
-                    </td>
-                    <td class="table__cell">
-                      <p class="product__feature product__feature--cross">Комментарии</p>
-                    </td>
-                    <td class="table__cell">
-                      <p class="product__feature product__feature--cross">Комментарии</p>
                     </td>
                   </tr>
                 </table>
@@ -194,7 +204,7 @@
             </div>
             <div class="slider__controls-wrapper section-rates__controls-wrapper">
               <label for="rates-slide1" class="slider__control">Слайд №1</label>
-              <label for="rates-slide2" class="slider__control">Слайд №2</label>
+              <label for="rates-slide2" class="slider__control slider__control--active">Слайд №2</label>
               <label for="rates-slide3" class="slider__control">Слайд №3</label>
             </div>
           </section>
@@ -206,13 +216,19 @@
           <b class="promo-text promo-text--no-margin">Остались вопросы?</b>
           <b class="promo-text">Свяжитесь с нами</b>
           <address class="section-contacts__content-wrapper">
-            <p class="section-contacts__text section-contacts__text--bold">Звоните:
-            </p>
-            <a href="tel:+78125556666" class="section-contacts__link section-contacts__link--pink">+7 (812) 555-66-66</a>
-            <p class="section-contacts__text section-contacts__text--bold">Пишите:</p>
-            <a href="mailto:mail@htmlacademy.ru" class="section-contacts__link section-contacts__link--pink">mail@htmlacademy.ru</a>
-            <p class="section-contacts__text section-contacts__text--bold">Приезжайте в гости:</p>
-            <p class="section-contacts__text section-contacts__text--bigger-pink">ул.&nbsp;Большая Конюшенная,&nbsp;19/8</p>
+            <div class="section-contacts__row">
+              <p class="section-contacts__text section-contacts__text--bold">Звоните:
+              </p>
+              <a href="tel:+78125556666" class="section-contacts__link section-contacts__link--pink">+7 (812) 555-66-66</a>
+            </div>
+            <div class="section-contacts__row">
+              <p class="section-contacts__text section-contacts__text--bold">Пишите:</p>
+              <a href="mailto:mail@htmlacademy.ru" class="section-contacts__link section-contacts__link--pink">mail@htmlacademy.ru</a>
+            </div>
+            <div class="section-contacts__row">
+              <p class="section-contacts__text section-contacts__text--bold">Приезжайте в гости:</p>
+              <p class="section-contacts__text section-contacts__text--bigger-pink">ул.&nbsp;Большая Конюшенная,&nbsp;19/8</p>
+            </div>
           </address>
         </div>
       </section>
@@ -253,5 +269,6 @@
         </div>
       </section>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

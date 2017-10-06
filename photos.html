@@ -36,7 +36,7 @@
             <a href="http://htmlacademy.ru" class="nav-list__link">HTML Academy</a></li>
         </ul>
       </nav>
-      <div class="container">
+      <div class="container main-header__container main-header__container--smaller">
         <h2 class="promo-text promo-text--no-margin-line-height">Фотографии пользователей</h2>
       </div>
     </header>
@@ -50,20 +50,21 @@
         </div>
       </section>
 
-      <article class="post post--container">
+      <article class="post post--container post--full-width">
+        <p class="post__text post__text--photo-lable">Панорама дня</p>
         <a href="#" class="post__link">
           <picture>
-            <img src="img/panorama-mobile@1x.jpg" alt="Фотография пользователя" class="post__img">
+            <img src="img/panorama-mobile@1x.jpg" alt="Фотография пользователя" class="post__img post__img--large">
           </picture>
         </a>
-        <div class="container container--column">
-          <p class="post__text post__text--author">Анна
+        <div class="container container--column post__container post__container--full-width">
+          <p class="post__text post__text--author post__text--author-ordered">Анна
             <span class="post__text post__text--time">(5 минут назад)</span>
           </p>
-          <p class="post__text">
+          <p class="post__text post__text--ordered">
             Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
           </p>
-          <a class="post__text post__text--like" href="#">Нравится:
+          <a class="post__text post__text--like post__text--like-ordered" href="#">Нравится:
             <span class="post__likes">215</span>
           </a>
         </div>
@@ -71,7 +72,7 @@
 
       <div class="container container--column">
         <section class="section section--white section-photos">
-          <article class="post">
+          <article class="post post--half-width">
             <a href="#" class="post__link">
               <picture>
                 <img src="img/photo-car-mobile@1x.jpg" alt="Фотография пользователя" class="post__img">
@@ -81,14 +82,14 @@
               <p class="post__text post__text--author">Левон
                 <span class="post__text post__text--time">(5 часов назад)</span>
               </p>
-              <p class="post__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              <p class="post__text post__text--grow">Вчера он на луну летал, сегодня в руки к нам попал.</p>
               <a class="post__text post__text--like" href="#">Нравится:
                 <span class="post__likes">356</span>
               </a>
             </div>
           </article>
 
-          <article class="post">
+          <article class="post post--half-width">
             <a href="#" class="post__link">
               <picture>
                 <img src="img/photo-drumset-mobile@1x.jpg" alt="Фотография пользователя" class="post__img">
@@ -98,14 +99,14 @@
               <p class="post__text post__text--author">Антон
                 <span class="post__text post__text--time">(12 часов назад)</span>
               </p>
-              <p class="post__text">Соседи будут рады!</p>
+              <p class="post__text post__text--grow">Соседи будут рады!</p>
               <a class="post__text post__text--like" href="#">Нравится:
                 <span class="post__likes">666</span>
               </a>
             </div>
           </article>
 
-          <article class="post">
+          <article class="post post--half-width">
             <a href="#" class="post__link">
               <picture>
                 <img src="img/photo-window-mobile@1x.jpg" alt="Фотография пользователя" class="post__img">
@@ -115,14 +116,14 @@
               <p class="post__text post__text--author">Борис
                 <span class="post__text post__text--time">(20 часов назад)</span>
               </p>
-              <p class="post__text post__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+              <p class="post__text post__text--grow">Здесь могла быть ваша цитата о высоком и вечном.</p>
               <a class="post__text post__text--like" href="#">Нравится:
                 <span class="post__likes">215</span>
               </a>
             </div>
           </article>
 
-          <article class="post">
+          <article class="post post--half-width">
             <a href="#" class="post__link">
               <picture>
                 <img src="img/photo-fair-mobile@1x.jpg" alt="Фотография пользователя" class="post__img">
@@ -132,14 +133,14 @@
               <p class="post__text post__text--author">Сергей
                 <span class="post__text post__text--time">(25 часов назад)</span>
               </p>
-              <p class="post__text">Самая кубанская в мире!</p>
+              <p class="post__text post__text--grow">Самая кубанская в мире!</p>
               <a class="post__text post__text--like" href="#">Нравится:
                 <span class="post__likes">4</span>
               </a>
             </div>
           </article>
 
-          <article class="post">
+          <article class="post post--half-width">
             <a href="#" class="post__link">
               <picture>
                 <img src="img/photo-pov-mobile@1x.jpg" alt="Фотография пользователя" class="post__img">
@@ -150,14 +151,14 @@
                 <span class="
               post__text post__text--time">(40 часов назад)</span>
               </p>
-              <p class="post__text">Где снег-то?</p>
+              <p class="post__text post__text--grow">Где снег-то?</p>
               <a class="post__text post__text--like" href="#">Нравится:
                 <span class="post__likes">150</span>
               </a>
             </div>
           </article>
 
-          <article class="post post--no-margin">
+          <article class="post post--half-width post--no-margin">
             <a href="#" class="post__link">
               <picture>
                 <img src="img/photo-wing-mobile@1x.jpg" alt="Фотография пользователя" class="post__img">
@@ -167,7 +168,7 @@
               <p class="post__text post__text--author">Надежда
                 <span class="post__text post__text--time">(45 часов назад)</span>
               </p>
-              <p class="post__text">Всем GM и взаимные лайки!</p>
+              <p class="post__text post__text--grow">Всем GM и взаимные лайки!</p>
               <a class="post__text post__text--like" href="#">Нравится:
                 <span class="post__likes">2560</span>
               </a>
@@ -176,7 +177,7 @@
         </section>
       </div>
 
-      <section class="section-about">
+      <section class="section-about section-about--margin-padding-top">
         <div class="container">
           <p class="main__text section-about__text">
             Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!
@@ -186,7 +187,7 @@
 
       <section class="section section--grey editor">
         <form action="http://echo.htmlacademy.ru" method="get" class="editor__form">
-          <div class="container container--column">
+          <div class="container container--column editor__container">
             <img src="img/photo-road-mobile@1x.jpg" alt="Редактируемая фотография" class="editor__img">
 
             <input type="radio" class="editor__control editor__control--crop" name="editor-control" id="crop" checked>
@@ -215,9 +216,6 @@
                 </svg>
                 <span class="visually-hidden">Контрастность</span>
               </label>
-            </div>
-
-            <div class="editor__range-wrapper">
               <div class="editor__bar editor__bar--crop"></div>
               <div class="editor__bar editor__bar--fill"></div>
               <div class="editor__bar editor__bar--contrast"></div>
@@ -234,7 +232,7 @@
 
     <footer class="main-footer">
         <section class="main-footer__content">
-          <div class="container container--column">
+          <div class="container container--column main-footer__container">
             <a href="index.html" class="logo-link logo-link--pink">
               <svg class="logo-link__img" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
                 <g>
@@ -261,5 +259,6 @@
           </div>
         </section>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

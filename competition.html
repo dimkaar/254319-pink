@@ -51,19 +51,25 @@
     </section>
 
     <form class="form" action="echo.htmlacademy.ru" method="post">
-      <div class="form__group form__group--no-padding-top">
-        <div class="container container--column">
-          <label for="family" class="form__label form__label--pink-uppercase form__label--smaller-margin">Фамилия:</label>
-          <input type="text" class="form__input form__input--text form__input--full-row" id="family" name="family" placeholder="Укажите фамилию *" required>
-          <label for="name" class="form__label form__label--pink-uppercase">Имя:</label>
-          <input type="text" class="form__input form__input--text form__input--full-row" id="name" name="name" placeholder="Введите ваше имя *" required>
-          <label for="patronymic" class="form__label form__label--pink-uppercase">Отчество:</label>
-          <input type="text" class="form__input form__input--text form__input--full-row" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже">
+      <div class="form__group form__group--half-width form__group--fio form__group--no-padding-top">
+        <div class="container container--column form__container form__container--no-border form__container--no-margin">
+          <div class="form__line-container">
+            <label for="family" class="form__label form__label--pink-uppercase form__label--smaller-margin">Фамилия:</label>
+            <input type="text" class="form__input form__input--text form__input--half-row" id="family" name="family" placeholder="Укажите фамилию *" required>
+          </div>
+          <div class="form__line-container">
+            <label for="name" class="form__label form__label--pink-uppercase">Имя:</label>
+            <input type="text" class="form__input form__input--text form__input--half-row" id="name" name="name" placeholder="Введите ваше имя *" required>
+          </div>
+          <div class="form__line-container">
+            <label for="patronymic" class="form__label form__label--pink-uppercase">Отчество:</label>
+            <input type="text" class="form__input form__input--text form__input--half-row" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже">
+          </div>
         </div>
       </div>
 
-      <div class="form__group section section--grey">
-        <div class="container container--column">
+      <div class="form__group form__group--achievement form__group--grey">
+        <div class="container container--column form__container">
           <p class="form__text form__text--title">Ваши безбашенные достижени&nbsp;в&nbsp;путешествии</p>
           <div class="form__line-container">
             <input type="checkbox" class="form__input form__input--no-display" name="achievements" value="selfie" id="selfie" checked>
@@ -92,17 +98,24 @@
         </div>
       </div>
 
-      <div class="form__group">
-        <div class="container container--column">
-          <label for="phone" class="form__label form__label--pink-uppercase form__label--no-margin">Номер телефона</label>
-          <input type="tel" class="form__input form__input--text form__input--full-row" id="phone" name="phone" placeholder="Номер, пожалуйста">
-          <label for="patronymic" class="form__label form__label--pink-uppercase">Адрес почты</label>
-          <input type="email" class="form__input form__input--text form__input--full-row" id="email" name="email" placeholder="Введите почту *" required>
+      <div class="form__group form__group--contacts">
+        <p class="form__text form__text--title form__text--no-display-mobile">Контактная информация</p>
+        <div class="container container--column form__container form__container--margin-top">
+          <div class="form__line-container form__line-container--column">
+            <label for="phone" class="form__label form__label--pink-uppercase form__label--no-margin form__label--ordered">Номер телефона</label>
+            <input type="tel" class="form__input form__input--text form__input--full-row form__input--ordered" id="phone" name="phone" placeholder="Номер, пожалуйста">
+            <span class="form__icon form__icon--phone"></span>
+          </div>
+          <div class="form__line-container form__line-container--column">
+            <label for="patronymic" class="form__label form__label--pink-uppercase form__label--ordered">Адрес почты</label>
+            <input type="email" class="form__input form__input--text form__input--full-row form__input--ordered" id="email" name="email" placeholder="Введите почту *" required>
+            <span class="form__icon form__icon--email"></span>
+          </div>
         </div>
       </div>
 
-      <div class="form__group section section--grey">
-        <div class="container container--column">
+      <div class="form__group form__group--half-width form__group--platform form__group--grey">
+        <div class="container container--column form__container form__container--no-margin">
           <p class="form__text form__text--title">С каким приложением путешествовали?</p>
 
           <div class="form__line-container">
@@ -122,26 +135,26 @@
         </div>
       </div>
 
-      <div class="form__group">
-        <div class="container container--column">
-          <label for="comment" class="form__label form__label--pink-uppercase">Опишите свои эмоции</label>
-          <textarea name="comment" id="comment" class="form__textarea">Можно прям в красках, не стесняясь в выражениях
-          </textarea>
+      <div class="form__group form__group--emotions">
+        <div class="container container--column form__container">
+
+          <p class="form__text form__text--title">
+            <label for="comment" class="form__label form__label--pink-uppercase">Опишите свои эмоции</label>
+          </p>
+          <textarea name="comment" id="comment" class="form__textarea" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </div>
       </div>
 
-      <div class="container">
-        <button class="btn btn--green form__btn">Отправить форму</button>
+      <div class="container form__container form__container--bottom form__container--no-border form__container--half-width">
+        <button class="btn btn--green form__btn form__btn--half-width">Отправить форму</button>
+        <p class="form__text form__text--half-width form__text--uppercase"><span class="form__text form__text--title form__text form__text--no-margin">*</span> &mdash; обязательные<span class="form__text form__text--no-display-tablet">для заполнения</span> поля</p>
       </div>
     </form>
-    <div class="container">
-      <p class="form__text form__text--uppercase"><span class="form__text form__text--title">*</span> &mdash; обязательные поля</p>
-    </div>
   </main>
 
   <footer class="main-footer">
     <section class="main-footer__content">
-      <div class="container container--column">
+      <div class="container container--column main-footer__container">
         <a href="index.html" class="logo-link logo-link--pink">
           <svg class="logo-link__img" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
                 <g>
@@ -179,7 +192,7 @@
     </div>
   </section>
 
-  <section class="modal modal--no-padding modal--confirm">
+  <section class="modal modal--no-padding">
     <div class="container container--column">
       <h3 class="third-title">Ваша заявка отправлена</h3>
       <p class="modal__text">
@@ -191,5 +204,6 @@
       <button class="btn btn--green" type="button">Закрыть окно</button>
     </div>
   </section>
+  <script src="js/script.js"></script>
 </body>
 </html>
