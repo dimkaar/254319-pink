@@ -1,11 +1,70 @@
 .section-info {
   padding-top: 63px;
-  padding-bottom: 300px;
+  z-index: -2;
 
-  background-repeat: no-repeat;
-  background-image: url("../img/iphone-screen-mobile@1x.png");
-  background-size: auto;
-  background-position: 50% 108%;
+  @media (min-width: 768px) {
+    padding-top: 320px;
+  }
+}
+
+.section-info__container {
+  @media (min-width: 660px) {
+    width: 47%;
+    margin-right: 3%;
+    margin-left: auto;
+
+    text-align: left;
+
+    &::before {
+      z-index: -1;
+    }
+  }
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+    padding: 0 1%;
+    box-sizing: border-box;
+  }
+}
+
+.section-info__title {
+  @media (min-width: 660px) {
+    width: 100%;
+    margin: 18px 0 12px;
+
+    text-align: left;
+  }
+
+  @media (min-width: 768px) {
+    position: relative;
+    z-index: 2;
+    order: 2;
+    width: 33.3%;
+    padding: 60px 4% 0;
+    box-sizing: border-box;
+
+    font-size: $fifth-font-size;
+    line-height: $third-line-height;
+    text-align: center;
+
+    background-color: $grey;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+
+      width: 276px;
+      height: 20px;
+      margin-left: calc(-276px / 2);
+
+      box-shadow: 0 -10px 25px -6px $dark-grey;
+    }
+  }
 }
 
 .section-info__text {
@@ -13,4 +72,52 @@
   margin-bottom: 20px;
 
   text-align: center;
+
+  @media (min-width: 660px) {
+    text-align: left;
+  }
+
+  @media (min-width: 768px) {
+    position: relative;
+    order: 3;
+    width: 33.3%;
+    padding: 0 5%;
+    box-sizing: border-box;
+
+    text-align: center;
+  }
+}
+
+.section-info__img {
+  width: 157px;
+  height: 320px;
+
+  @media (min-width: 660px) {
+    position: absolute;
+    bottom: -14%;
+    left: 3%;
+    z-index: 1;
+
+    width: 250px;
+    height: auto;
+  }
+
+  @media (min-width: 768px) {
+    position: absolute;
+    top: -460px;
+    left: 50%;
+    z-index: 1;
+
+    order: 1;
+    width: 188px;
+    margin-left: -94px;
+  }
+}
+
+.section-info__img--no-display {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+  }
 }

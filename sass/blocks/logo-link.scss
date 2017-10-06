@@ -22,4 +22,9 @@
   &:active {
     opacity: 0.3;
   }
+
+  @media (min-width: 660px) {
+    margin-top: -18px;
+    margin-bottom: 0;
+  }
 }

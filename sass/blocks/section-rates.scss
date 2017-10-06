@@ -3,21 +3,45 @@
   padding-bottom: 60px;
 
   overflow: hidden;
+
+  @media (min-width: 768px) {
+    padding-top: 160px;
+  }
+}
+
+.section-rates__container {
+  @media (min-width: 768px) {
+    padding: 0 1%;
+    box-sizing: border-box;
+  }
 }
 
 .section-rates__slide {
   width: 840px;
   margin-left: -280px;
+
+  @media (min-width: 660px) {
+    width: 100%;
+    margin-left: 0;
+  }
 }
 
 .section-rates__slider {
   .slider__control {
     &:nth-of-type(2) {
       border: 3px solid $navy;
+
+      &::before {
+        background-color: white;
+      }
     }
   }
 }
 
 .section-rates__controls-wrapper {
   top: 90%;
+
+  @media (min-width: 660px) {
+    display: none;
+  }
 }

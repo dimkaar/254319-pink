@@ -1,12 +1,18 @@
 .product__name,
 .product__price {
+  display: block;
+  width: 100%;
   margin-top: 0;
   margin-bottom: 0;
 
-  font-size: $bigger-font-size;
-  line-height: $biggest-line-height;
-  font-weight: 300;
+  font-size: $secondary-font-size;
+  line-height: $third-line-height;
+  font-weight: 700;
   text-transform: uppercase;
+}
+
+.product__price {
+  font-weight: 300;
 }
 
 .product__diagonal-text {
@@ -15,7 +21,7 @@
   left: -25px;
 
   width: 100px;
-  line-height: $biggest-line-height;
+  line-height: $third-line-height;
   text-transform: uppercase;
   font-weight: 700;
 
@@ -26,8 +32,16 @@
 .product__feature {
   margin: 0;
 
-  line-height: $biggest-line-height;
+  line-height: $third-line-height;
   text-transform: uppercase;
+
+  @media (min-width: 660px) {
+    text-transform: none;
+  }
+
+  @media (min-width: 768px) {
+    font-size: $secondary-font-size;
+  }
 }
 
 .product__feature--tick {
@@ -58,6 +72,23 @@
 
     transform: rotate(45deg);
   }
+
+  @media (min-width: 660px) {
+    @include text-indent;
+
+    &::before {
+      left: 50%;
+      right: 50%;
+      margin-right: -10px;
+    }
+
+    &::after {
+      left: 50%;
+      right: 50%;
+
+      margin-left: -6px;
+    }
+  }
 }
 
 .product__feature--cross {
@@ -80,5 +111,16 @@
 
   &::after {
     transform: rotate(45deg);
+  }
+
+  @media (min-width: 660px) {
+    @include text-indent;
+
+    &::before,
+    &::after {
+      left: 50%;
+      right: 50%;
+      margin-left: -8px;
+    }
   }
 }

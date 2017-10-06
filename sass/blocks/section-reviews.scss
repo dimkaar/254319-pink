@@ -1,15 +1,17 @@
 .section-reviews {
+  margin-top: -60px;
   padding-top: 50px;
   padding-bottom: 40px;
-}
+  background-color: white;
 
-.section-reviews__slider {
-  width: 100%;
+  @media (min-width: 660px) {
+    margin-top: 0;
+    padding-bottom: 70px;
+  }
 
-  .slider__control {
-    &:first-of-type {
-      border: 3px solid $navy;
-    }
+  @media (min-width: 768px) {
+    padding-top: 180px;
+    padding-bottom: 200px;
   }
 }
 
@@ -19,24 +21,94 @@
   text-align: center;
 
   &:first-of-type {
-    display: block;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.section-reviews__controls-wrapper {
+  @media (min-width: 660px) {
+    top: 90%;
+  }
+
+  @media (min-width: 768px) {
+    position: relative;
+
+    margin-top: -205px;
   }
 }
 
 .section-reviews__author {
   display: block;
   margin-bottom: 25px;
-  font-size: $bigger-font-size;
-  line-height: $biggest-line-height;
+  font-size: $secondary-font-size;
+  line-height: $third-line-height;
   font-weight: 700;
   font-style: normal;
   color: black;
+
+  @media (min-width: 660px) {
+    order: 2;
+    margin-bottom: 5px;
+
+    font-size: $sixth-font-size;
+    line-height: $third-line-height;
+  }
+
+  @media (min-width: 768px) {
+    margin-bottom: 0;
+
+    font-size: $third-font-size;
+  }
 }
 
 .section-reviews__author-info {
   display: none;
+
+  @media (min-width: 660px) {
+    order: 3;
+    display: block;
+    margin: 0;
+
+    line-height: $third-line-height;
+  }
+
+  @media (min-width: 768px) {
+    font-size: $secondary-font-size;
+  }
 }
 
 .section-reviews__quote-text {
   margin-bottom: 35px;
+
+  @media (min-width: 660px) {
+    order: 1;
+
+    font-size: $secondary-font-size;
+    line-height: $fifth-line-height;
+  }
+
+  @media (min-width: 768px) {
+    position: relative;
+
+    width: 72%;
+    margin: 0 auto 35px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -100px;
+      left: 50%;
+
+      width: 80px;
+      height: 63px;
+      margin-left: -40px;
+
+      background-color: white;
+      background-image: url("");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 50%;
+    }
+  }
 }

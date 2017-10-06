@@ -1,37 +1,127 @@
 .editor {
   padding-top: 20px;
   padding-bottom: 40px;
+
+  @media (min-width: 660px) {
+    padding-top: 55px;
+    padding-bottom: 70px;
+  }
+
+  @media (min-width: 768px) {
+    padding-top: 0;
+    padding-bottom: 0;
+
+    background-color: white;
+  }
 }
 
 .editor__form {
   width: 100%;
+  max-width: 940px;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    padding-top: 55px;
+    padding-bottom: 55px;
+
+    background-color: $grey;
+  }
+}
+
+.editor__container {
+  position: relative;
+
+  @media (min-width: 660px) {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  @media (min-width: 768px) {
+    width: 100%;
+    padding-right: 6.25%;
+  }
 }
 
 .editor__img {
   display: block;
   margin-bottom: 40px;
+  width: 280px;
+  height: 374px;
+
+  @media (min-width: 660px) {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  @media (min-width: 768px) {
+    left: 8%;
+  }
 }
 
 .editor__controls-wrapper {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
+  width: 80%;
+  max-width: 366px;
   margin-bottom: 40px;
+
+  @media (min-width: 660px) {
+    order: 2;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 48.5%;
+    max-width: none;
+    margin-bottom: 0;
+    padding-left: 3%;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: 768px) {
+    width: 47.5%;
+    max-width: 410px;
+    padding-left: 0;
+  }
+}
+
+.editor__control {
+  display: none;
 }
 
 .editor__lable {
-  width: 44px;
-  height: 44px;
-
   fill: $navy;
   opacity: 0.3;
 
   &:hover {
     opacity: 0.5;
   }
+
+  @media (min-width: 660px) {
+    width: 20%;
+
+    fill: $pink;
+    opacity: 1;
+  }
 }
 
-.editor__control {
-  display: none;
+.editor__lable--crop {
+  @media (min-width: 660px) {
+    order: 1;
+  }
+}
+
+.editor__lable--fill {
+  @media (min-width: 660px) {
+    order: 3;
+  }
+}
+
+.editor__lable--contrast {
+  @media (min-width: 660px) {
+    order: 5;
+  }
 }
 
 .editor__control--crop:checked ~ .editor__controls-wrapper .editor__lable--crop,
@@ -46,13 +136,16 @@
   vertical-align: middle;
   width: 44px;
   height: 44px;
-}
 
-.editor__range-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 34px;
+  @media (min-width: 660px) {
+    width: 24px;
+    height: 24px;
+  }
+
+  @media (min-width: 768px) {
+    width: 48px;
+    height: 48px;
+  }
 }
 
 .editor__bar {
@@ -62,6 +155,7 @@
   display: none;
   width: 240px;
   height: 2px;
+  margin-top: 40px;
 
   background-color: $navy;
 
@@ -82,11 +176,45 @@
   &:active::after {
     background-color: $pink;
   }
+
+  @media (min-width: 660px) {
+    display: block;
+    width: 80%;
+    margin: 35px 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -33%;
+      bottom: -35px;
+
+      width: 133%;
+      height: 1px;
+
+      background-color: $lighten-grey;
+    }
+  }
+
+  @media (min-width: 768px) {
+    width: 80%;
+
+    &::before {
+      left: -25%;
+
+      width: 125%;
+
+      background-color: $lighten-grey;
+    }
+  }
 }
 
 .editor__bar--crop {
   &::after {
     left: 80%;
+  }
+
+  @media (min-width: 660px) {
+    order: 2;
   }
 }
 
@@ -94,17 +222,25 @@
   &::after {
     left: 30%;
   }
+
+  @media (min-width: 660px) {
+    order: 4;
+  }
 }
 
 .editor__bar--contrast {
   &::after {
     left: 60%;
   }
+
+  @media (min-width: 660px) {
+    order: 6;
+  }
 }
 
-.editor__control--crop:checked ~ .editor__range-wrapper .editor__bar--crop,
-.editor__control--fill:checked ~ .editor__range-wrapper .editor__bar--fill,
-.editor__control--contrast:checked ~ .editor__range-wrapper .editor__bar--contrast {
+.editor__control--crop:checked ~ .editor__controls-wrapper .editor__bar--crop,
+.editor__control--fill:checked ~ .editor__controls-wrapper .editor__bar--fill,
+.editor__control--contrast:checked ~ .editor__controls-wrapper .editor__bar--contrast {
   display: block;
 }
 
@@ -115,6 +251,25 @@
   text-align: center;
 
   border-top: 1px solid $lighten-grey;
+
+  @media (min-width: 660px) {
+    width: 48.5%;
+    margin-top: 50px;
+    margin-left: auto;
+    padding-top: 0;
+
+    border: none;
+  }
+
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+
+    width: 43.7%;
+    max-width: 410px;
+    margin-top: 104px;
+    margin-right: 6.25%;
+  }
 }
 
 .editor__btn {
@@ -124,6 +279,12 @@
 
   &:last-of-type {
     margin-bottom: 0;
+  }
+
+  @media (min-width: 768px) {
+    width: 45%;
+    margin-bottom: 0;
+    padding: 15px 0;
   }
 }
 
