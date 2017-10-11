@@ -1,0 +1,40 @@
+.download {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  width: 100%;
+  margin-bottom: 25px;
+
+  @media (min-width: 768px) {
+    max-width: 300px;
+    margin-right: auto;
+  }
+}
+
+.download__link {
+  @include text-indent;
+
+  display: inline-block;
+
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50%;
+}
+
+.download__link--ios {
+  width: 47px;
+  height: 57px;
+  background-image: url("../img/logo-apple.svg");
+}
+
+.download__link--android {
+  width: 43px;
+  height: 48px;
+  background-image: url("../img/logo-android.svg");
+}
+
+.download__link--windows {
+  width: 44px;
+  height: 44px;
+  background-image: url("../img/logo-microsoft.svg");
+}

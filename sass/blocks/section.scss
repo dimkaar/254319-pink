@@ -1,0 +1,27 @@
+.section {
+  position: relative;
+  width: 100%;
+
+  background-color: white;
+}
+
+.section--gradient-top {
+  padding-top: calc(100vw / 10);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    width: 100%;
+    height: calc(100vw / 10);
+
+    background-image: linear-gradient(to right bottom, white 50%, $grey 50%);
+  }
+}
+
+.section--grey {
+  background-color: $grey;
+}

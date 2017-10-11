@@ -1,0 +1,41 @@
+.section-about {
+  padding-top: 45px;
+  padding-bottom: 45px;
+
+  text-align: center;
+
+  @media (min-width: 660px) {
+    padding: 95px 15% 75px;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: 768px) {
+    padding: 95px 16% 75px;
+  }
+}
+
+.section-about--margin-padding-top {
+  @media (min-width: 660px) {
+    margin-top: -20px;
+    padding-top: 75px;
+  }
+
+  @media (min-width: 768px) {
+    margin-top: -54px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.section-about--no-padding-bottom {
+  padding-bottom: 0;
+
+  @media (min-width: 660px) {
+    padding-bottom: 70px;
+  }
+}
+
+.section-about__text {
+  width: 100%;
+  margin: 0;
+}

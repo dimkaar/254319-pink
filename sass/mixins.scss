@@ -1,0 +1,5 @@
+@mixin text-indent() {
+  text-indent: -500%;
+  white-space: nowrap;
+  overflow: hidden;
+}

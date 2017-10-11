@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  width: 87.5%;
+  margin: 0 auto;
+
+  @media (min-width: 660px) {
+    width: 94%;
+  }
+
+  @media (min-width: 768px) {
+    width: 100%;
+    max-width: 960px;
+    padding: 0 1%;
+    box-sizing: border-box;
+  }
+}
+
+.container--column {
+  flex-direction: column;
+  align-items: center;
+}
+
+.container--padding {
+  width: 100%;
+  padding: 50px 6.25%;
+  box-sizing: border-box;
+}

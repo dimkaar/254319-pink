@@ -1,0 +1,42 @@
+.promo-text {
+  display: block;
+  margin-bottom: 30px;
+
+  font-size: $third-font-size;
+  line-height: $base-line-height;
+  font-weight: 300;
+  text-align: center;
+
+  @media (min-width: 660px) {
+    margin-bottom: 40px;
+    font-size: $fourth-font-size;
+    line-height: $fourth-line-height;
+  }
+
+  @media (min-width: 768px) {
+    font-size: $seventh-font-size;
+    line-height: $sixth-line-height;
+    margin-bottom: 60px;
+  }
+}
+
+.promo-text--no-margin {
+  margin: 0;
+}
+
+.promo-text--no-margin-tablet {
+  @media (min-width: 660px) {
+    margin-bottom: 0;
+  }
+}
+
+.promo-text--no-margin-line-height {
+  margin: 0;
+
+  line-height: $third-line-height;
+
+  @media (min-width: 660px) {
+    font-size: $seventh-font-size;
+    line-height: $sixth-line-height;
+  }
+}

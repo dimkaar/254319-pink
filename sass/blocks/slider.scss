@@ -1,0 +1,163 @@
+.slider {
+  width: 100%;
+}
+
+.slider input[type="radio"] {
+  display: none;
+}
+
+.slider__slides-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.slider__slide {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.slider__controls-wrapper {
+  position: absolute;
+  top: 84%;
+  left: 50%;
+
+  width: 76px;
+  margin-left: -38px;
+
+  @media (min-width: 768px) {
+    top: 50%;
+    left: 0;
+
+    width: 100%;
+    max-width: 960px;
+    margin: -50px auto 0;
+    box-sizing: border-box;
+  }
+}
+
+.slider__control {
+  @include text-indent;
+  position: relative;
+
+  display: inline-block;
+  vertical-align: middle;
+  width: 12px;
+  height: 12px;
+  margin: 0 8px;
+  box-sizing: border-box;
+
+  border: 3px solid transparent;
+  border-radius: 50%;
+
+  &:first-of-type {
+    margin-left: 0;
+  }
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 6px;
+    height: 6px;
+
+    background-color: rgba(40, 59, 64, 0.3);
+    border-radius: 50%;
+  }
+
+  &:hover::before {
+    background-color: rgba(40, 59, 64, 0.6);
+  }
+
+  &:active::before {
+    background-color: rgba(40, 59, 64, 0.1);
+  }
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.slider__control--active {
+  border: 3px solid $navy;
+
+  &::before {
+    background-color: white;
+  }
+}
+
+.slider__btn {
+  display: none;
+
+  @media (min-width: 768px) {
+    @include text-indent;
+    position: absolute;
+    top: 0;
+
+    display: inline-block;
+    width: 25px;
+    height: 100px;
+    padding: 0;
+
+    background-color: transparent;
+    border: 0;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+
+      width: 22px;
+      height: 2px;
+
+      background-color: $dark-grey;
+    }
+
+    &::before {
+      top: calc(50% - 7px);
+    }
+
+    &::after {
+      top: calc(50% + 7px);
+    }
+  }
+}
+
+.slider__btn--left {
+  left: 0;
+
+  &::before {
+    left: 0;
+
+    transform: rotate(-45deg);
+  }
+
+  &::after {
+    left: 0;
+
+    transform: rotate(45deg);
+  }
+}
+
+.slider__btn--right {
+  right: 0;
+
+  &::before {
+    right: 0;
+
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    right: 0;
+
+    transform: rotate(-45deg);
+  }
+}

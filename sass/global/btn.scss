@@ -1,0 +1,42 @@
+.btn {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+
+  background-color: transparent;
+
+  &:hover {
+    color: $pink;
+
+    background-color: white;
+  }
+
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+
+    background-color: white;
+  }
+}
+
+.btn--rounded {
+  font-size: $secondary-font-size;
+  line-height: $secondary-line-height;
+
+  border: 3px solid white;
+  border-radius: 30px;
+}
+
+.btn--green {
+  padding: 18px 0;
+
+  text-transform: uppercase;
+
+  background-color: $dark-green;
+  border: none;
+  border-radius: 3px;
+}
