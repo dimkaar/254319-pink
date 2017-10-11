@@ -10,8 +10,10 @@ if (burgerBtn) {
   burgerBtn.addEventListener('click', function(){
     if(!mainNav.classList.contains('main-nav--opened')) {
       mainNav.classList.add('main-nav--opened');
+      mainHeader.classList.add('main-header--opened');
     } else {
       mainNav.classList.remove('main-nav--opened');
+      mainHeader.classList.remove('main-header--opened');
     }
   });
 }
