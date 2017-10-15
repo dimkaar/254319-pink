@@ -31,10 +31,9 @@
   }
 
   @media (min-width: 768px) {
-    width: 55%;
+    width: 57%;
     max-width: 570px;
     margin-left: auto;
-    margin-right: 4.6%;
     padding-right: 0;
   }
 }
@@ -51,9 +50,9 @@
   }
 
   @media (min-width: 768px) {
-    width: 55%;
+    width: 57%;
     max-width: 570px;
-    margin: 22px 4.6% 22px auto;
+    margin: 22px 4% 22px auto;
     padding-right: 0;
 
     font-size: $secondary-font-size;
@@ -75,11 +74,10 @@
   }
 
   @media (min-width: 768px) {
-    width: 55%;
+    width: 57%;
     max-width: 570px;
     margin-top: 8px;
     margin-left: auto;
-    margin-right: 4.6%;
 
     font-size: $secondary-font-size;
     line-height: $third-line-height;
