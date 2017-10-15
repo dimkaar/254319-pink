@@ -32,11 +32,13 @@
 }
 
 .btn--green {
-  padding: 18px 0;
+  padding: 22px 0;
 
   text-transform: uppercase;
 
   background-color: $dark-green;
   border: none;
   border-radius: 3px;
+
+  font-size: $secondary-font-size;
 }

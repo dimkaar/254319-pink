@@ -118,8 +118,9 @@
     &::before,
     &::after {
       top: 0;
+      left: 50%;
 
-      width: 24px;
+      width: 30px;
       margin: 0 auto;
     }
 
@@ -137,6 +138,15 @@
 
     &:active {
       background-color: transparent;
+    }
+
+    @media (min-width: 660px) {
+      &::before,
+      &::after {
+        left: 45%;
+
+        width: 32px;
+      }
     }
   }
 

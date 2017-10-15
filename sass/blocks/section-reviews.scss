@@ -1,17 +1,18 @@
 .section-reviews {
   margin-top: -60px;
-  padding-top: 50px;
-  padding-bottom: 40px;
+  padding-top: 42px;
+  padding-bottom: 47px;
   background-color: white;
 
   @media (min-width: 660px) {
     margin-top: 0;
-    padding-bottom: 70px;
+    padding-top: 45px;
+    padding-bottom: 56px;
   }
 
   @media (min-width: 768px) {
-    padding-top: 180px;
-    padding-bottom: 200px;
+    padding-top: 185px;
+    padding-bottom: 210px;
   }
 }
 
@@ -34,13 +35,14 @@
   @media (min-width: 768px) {
     position: relative;
 
-    margin-top: -205px;
+    margin-top: -190px;
   }
 }
 
 .section-reviews__author {
   display: block;
-  margin-bottom: 25px;
+  margin-bottom: 13px;
+
   font-size: $secondary-font-size;
   line-height: $third-line-height;
   font-weight: 700;
@@ -49,14 +51,14 @@
 
   @media (min-width: 660px) {
     order: 2;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
 
     font-size: $sixth-font-size;
     line-height: $third-line-height;
   }
 
   @media (min-width: 768px) {
-    margin-bottom: 0;
+    margin-bottom: 2px;
 
     font-size: $third-font-size;
   }
@@ -79,20 +81,23 @@
 }
 
 .section-reviews__quote-text {
+  margin-top: 0;
   margin-bottom: 35px;
+
+  line-height: $third-line-height;
 
   @media (min-width: 660px) {
     order: 1;
 
     font-size: $secondary-font-size;
-    line-height: $fifth-line-height;
+    line-height: $third-line-height;
   }
 
   @media (min-width: 768px) {
     position: relative;
 
-    width: 72%;
-    margin: 0 auto 35px;
+    width: 73%;
+    margin: 0 auto 36px;
 
     &::before {
       content: "";
@@ -110,5 +115,15 @@
       background-size: cover;
       background-position: 50%;
     }
+  }
+}
+
+.section-reviews__text {
+  display: inline;
+}
+
+.section-reviews__text--no-display {
+  @media (min-width: 768px) {
+    display: none;
   }
 }

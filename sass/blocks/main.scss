@@ -1,4 +1,8 @@
 .main__text {
   font-size: $base-font-size;
   line-height: $third-line-height;
+
+  @media (min-width: 660px) {
+    font-size: $secondary-font-size;
+  }
 }
