@@ -178,10 +178,6 @@
   }
 }
 
-.form__container--margin-top {
-  z-index: -1;
-}
-
 .form__container--contacts {
   @media (min-width: 660px) {
     padding: 45px 8.8% 26px;
@@ -511,6 +507,8 @@ input[type="radio"]:checked + .form__label--radio {
   display: none;
 
   @media (min-width: 660px) {
+    z-index: 1;
+
     display: block;
     width: 30%;
     margin: 0 auto -10px;
