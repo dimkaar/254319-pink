@@ -16,7 +16,7 @@
     padding-bottom: 198px;
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       top: 72px;
       left: 50%;
@@ -26,13 +26,12 @@
       height: 63px;
       margin-left: -37px;
 
-      background-image: url('../img/icon-quotes.svg');
+      background-image: url("../img/icon-quotes.svg");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: 50%;
     }
   }
-
 }
 
 .section-reviews__slide {

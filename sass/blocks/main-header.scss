@@ -13,7 +13,7 @@
   background-size: 220% auto;
 
   @media (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
-    background-image: url('../img/bg-back-mobile@2x.jpg');
+    background-image: url("../img/bg-back-mobile@2x.jpg");
   }
 
   @media (min-width: 660px) {
@@ -59,7 +59,7 @@
     padding-bottom: 110px;
 
     background-image: url("../img/iphone-hand-tablet@1x.png"),
-    url("../img/bg-back-tablet@1x.jpg");
+      url("../img/bg-back-tablet@1x.jpg");
     background-position: 50% 100%,
       50% 110%;
     background-size: 700px auto,
@@ -67,7 +67,7 @@
 
     @media (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
       background-image: url("../img/iphone-hand-tablet@2x.png"),
-      url("../img/bg-back-tablet@2x.jpg");
+        url("../img/bg-back-tablet@2x.jpg");
     }
   }
 

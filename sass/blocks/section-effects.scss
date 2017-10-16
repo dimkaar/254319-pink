@@ -21,7 +21,7 @@
 
   @media (min-width: 660px) {
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       top: -38px;
       left: 0;
@@ -29,14 +29,14 @@
       width: 240px;
       height: 276px;
 
-      background-image: url('../img/icon-timer.svg');
+      background-image: url("../img/icon-timer.svg");
       background-repeat: no-repeat;
       background-size: contain;
       background-position: 50%;
     }
 
     &::after {
-      content: '24';
+      content: "24";
       position: absolute;
       top: 17px;
       left: 19px;
