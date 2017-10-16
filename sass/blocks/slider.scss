@@ -103,7 +103,7 @@
 
     display: inline-block;
     width: 25px;
-    height: 100px;
+    height: 50px;
     padding: 0;
 
     background-color: transparent;
@@ -117,7 +117,8 @@
       width: 30px;
       height: 2px;
 
-      background-color: $dark-grey;
+      background-color: $navy;
+      opacity: 0.3;
     }
 
     &::before {
@@ -126,6 +127,22 @@
 
     &::after {
       top: calc(50% + 10px);
+    }
+
+    &:hover {
+      &::before,
+      &::after {
+        background-color: $navy;
+        opacity: 0.6;
+      }
+    }
+
+    &:active {
+      &::before,
+      &::after {
+        background-color: $navy;
+        opacity: 0.1;
+      }
     }
   }
 }

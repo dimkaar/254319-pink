@@ -25,4 +25,8 @@
   width: 100%;
   padding: 50px 6.25%;
   box-sizing: border-box;
+
+  @media (min-width: 768px) {
+    padding: 48px 6.25%;
+  }
 }

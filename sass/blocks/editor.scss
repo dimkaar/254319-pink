@@ -108,6 +108,10 @@
 
     fill: $pink;
     opacity: 1;
+
+    &:hover {
+      opacity: 1;
+    }
   }
 
   @media (min-width: 768px) {
@@ -366,6 +370,8 @@
   opacity: 0.1;
 
   &:hover {
+    color: $navy;
+
     opacity: 0.3;
   }
 

@@ -83,10 +83,6 @@
 
   @media (min-width: 660px) {
     order: 3;
-    padding-top: 10px;
-  }
-
-  @media (min-width: 768px) {
     padding-top: 18px;
   }
 }
@@ -295,6 +291,18 @@
   @media (min-width: 660px) {
     padding-left: 59px;
   }
+
+  &:hover {
+    &::before {
+      border-color: $navy;
+    }
+  }
+
+  &:active {
+    &::before {
+      border-color: $pink;
+    }
+  }
 }
 
 input[type="checkbox"]:checked + .form__label--checkbox {
@@ -341,6 +349,18 @@ input[type="checkbox"]:checked + .form__label--checkbox {
   @media (min-width: 660px) {
     padding-left: 59px;
   }
+
+  &:hover {
+    &::before {
+      border-color: $navy;
+    }
+  }
+
+  &:active {
+    &::before {
+      border-color: $pink;
+    }
+  }
 }
 
 input[type="radio"]:checked + .form__label--radio {
@@ -369,6 +389,18 @@ input[type="radio"]:checked + .form__label--radio {
 
   border: 2px solid $light-grey;
   border-radius: 2px;
+
+  &:hover {
+    border-color: $navy;
+  }
+
+  &:active {
+    border-color: $pink;
+  }
+
+  &:focus {
+    border-color: $pink;
+  }
 }
 
 .form__input--half-row {
@@ -397,19 +429,23 @@ input[type="radio"]:checked + .form__label--radio {
     background-size: auto;
     background-position: 50%;
   }
+
+  @media (min-width: 768px) {
+    background-position: 45% 50%;
+  }
 }
-/*
+
 .form__icon--phone {
   @media (min-width: 660px) {
-    background-image: url("");
+    background-image: url("../img/icon-phone.svg");
   }
 }
 
 .form__icon--email {
   @media (min-width: 660px) {
-    background-image: url("");
+    background-image: url("../img/icon-mail.svg");
   }
-}*/
+}
 
 .form__input--ordered {
   @media (min-width: 660px) {
@@ -508,18 +544,21 @@ input[type="radio"]:checked + .form__label--radio {
 
   @media (min-width: 660px) {
     z-index: 1;
+    position: absolute;
+    top: 10px;
+    left: 32%;
 
     display: block;
     width: 30%;
     margin: 0 auto -10px;
+    padding: 0 3%;
   }
 
   @media (min-width: 768px) {
-    top: 10px;
+
 
     width: 22%;
     margin: 0;
-    padding: 0 3%;
   }
 }
 
@@ -670,6 +709,18 @@ input[type="radio"]:checked + .form__label--radio {
 
   border: 2px solid $light-grey;
   border-radius: 2px;
+
+  &:hover {
+    border-color: $navy;
+  }
+
+  &:active {
+    border-color: $pink;
+  }
+
+  &:focus {
+    border-color: $pink;
+  }
 
   @media (min-width: 660px) {
     min-height: 193px;

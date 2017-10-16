@@ -5,7 +5,7 @@
   height: 193px;
 
   background-color: #eae5d1;
-  background-image: url("../img/bg-map-mobile@1x.png");
+  background-image: url('../img/bg-map-mobile@1x.png');
   background-size: cover;
   background-position: 50% 0;
   background-repeat: no-repeat;
@@ -38,8 +38,14 @@
     background-color: $pink;
   }
 
+  @media (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
+    background-image: url('../img/bg-map-mobile@2x.jpg');
+  }
+
   @media (min-width: 660px) {
     height: 373px;
+
+    background-image: url('../img/bg-map-tablet@1x.jpg');
 
     &::before {
       margin-top: 5px;
@@ -48,10 +54,20 @@
     &::after {
       margin-top: 15px;
     }
+
+    @media (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
+      background-image: url('../img/bg-map-tablet@2x.jpg');
+    }
   }
 
   @media (min-width: 768px) {
     height: 492px;
+
+    background-image: url('../img/bg-map-desktop@1x.jpg');
+
+    @media (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
+      background-image: url('../img/bg-map-desktop@2x.jpg');
+    }
   }
 }
 

@@ -108,7 +108,7 @@
 
   @media (min-width: 660px) {
     position: absolute;
-    bottom: -13%;
+    bottom: 0;
     left: 3%;
     z-index: 1;
 
@@ -124,8 +124,8 @@
     z-index: 1;
 
     order: 1;
-    width: 188px;
-    margin-left: -94px;
+    width: auto;
+    margin-left: -144px;
   }
 }
 
