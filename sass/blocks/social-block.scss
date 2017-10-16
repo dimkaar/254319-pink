@@ -2,10 +2,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 37px;
 
   @media (min-width: 660px) {
     margin-bottom: 0;
+    margin-left: -20px;
+  }
+
+  @media (min-width: 768px) {
+    margin-left: 13px;
   }
 }
 
@@ -53,7 +58,7 @@
     left: 50%;
 
     width: 18px;
-    height: 18px;
+    height: 15px;
     margin-top: -9px;
     margin-left: -9px;
 
@@ -74,6 +79,9 @@
 
 .social-block__link--fb {
   &::after {
+    height: 18px;
+    margin-top: -11px;
+
     background-image: url("../img/icon-facebook.svg");
   }
 }

@@ -3,43 +3,25 @@
 
   @media (min-width: 660px) {
     display: block;
-    padding-top: 100px;
-    padding-bottom: 50px;
+    padding-top: 97px;
+    padding-bottom: 81px;
 
     background-color: white;
   }
 
   @media (min-width: 768px) {
-    padding-bottom: 100px;
+    padding-top: 114px;
+    padding-bottom: 114px;
     background-color: $grey;
-  }
-}
-
-.section-effects__container {
-  @media (min-width: 660px) {
-    width: 47%;
-    margin-left: auto;
-    margin-right: 3%;
-    padding-right: 12%;
-    box-sizing: border-box;
-
-    text-align: left;
-  }
-
-  @media (min-width: 768px) {
-    width: 60%;
-    margin-left: auto;
-    padding-right: 17%;
-    box-sizing: border-box;
-
-    text-align: left;
   }
 }
 
 .section-effects__title {
   @media (min-width: 660px) {
     display: inline-block;
-    width: 100%;
+    width: 46%;
+    margin-left: auto;
+    margin-right: 4%;
     padding-right: 30%;
     box-sizing: border-box;
 
@@ -47,11 +29,34 @@
     line-height: $fifth-line-height;
     text-align: left;
   }
+
+  @media (min-width: 768px) {
+    width: 57%;
+    max-width: 570px;
+    margin-left: auto;
+    padding-right: 0;
+  }
 }
 
 .section-effects__text {
-  margin: 8px 0;
+  margin: 9px 0;
   text-align: left;
+
+  @media (min-width: 660px) {
+    width: 46%;
+    margin-left: auto;
+    margin-right: 4%;
+  }
+
+  @media (min-width: 768px) {
+    width: 57%;
+    max-width: 570px;
+    margin: 22px 4% 22px auto;
+    padding-right: 0;
+
+    font-size: $secondary-font-size;
+    line-height: $third-line-height;
+  }
 }
 
 .section-effects__more-link {
@@ -60,4 +65,20 @@
 
   color: $pink;
   text-align: left;
+
+  @media (min-width: 660px) {
+    width: 46%;
+    margin-left: auto;
+    margin-right: 4%;
+  }
+
+  @media (min-width: 768px) {
+    width: 57%;
+    max-width: 570px;
+    margin-top: 8px;
+    margin-left: auto;
+
+    font-size: $secondary-font-size;
+    line-height: $third-line-height;
+  }
 }

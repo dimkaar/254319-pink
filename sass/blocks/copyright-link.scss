@@ -5,11 +5,19 @@
   line-height: $secondary-line-height;
   color: $navy;
   text-decoration: none;
+
+  @media (min-width: 768px) {
+    font-size: $secondary-font-size;
+  }
 }
 
 .copyright-link__img {
-  height: 34px;
-  margin-left: 25px;
+  width: 42px;
+  height: 42px;
+
+  margin-left: 8px;
+  margin-right: -8px;
+
 
   fill: $pink;
 
@@ -20,9 +28,5 @@
   &:active {
     fill: $navy;
     opacity: 0.3;
-  }
-
-  @media (min-width: 768px) {
-    margin-left: 15px;
   }
 }

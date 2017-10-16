@@ -12,12 +12,18 @@
     z-index: 1;
 
     width: 100%;
-    height: calc(100vw / 10);
+    height: calc(100% / 7);
 
     background-image: url("../img/bg-triangle-white-footer.svg");
     background-size: contain;
     background-position: 50% 0;
     background-repeat: no-repeat;
+  }
+
+  @media (min-width: 768px) {
+    &::before {
+      height: calc(100% / 6);
+    }
   }
 }
 
@@ -30,10 +36,39 @@
 
 .main-footer__content {
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 34px;
 
   .container {
     align-items: center;
+  }
+
+  @media (min-width: 660px) {
+    padding-bottom: 35px;
+  }
+
+  @media (min-width: 768px) {
+    padding-top: 73px;
+    padding-bottom: 73px;
+  }
+}
+
+.main-footer__content--padding-top {
+  @media (min-width: 768px) {
+    padding-top: 102px;
+    padding-bottom: 72px;
+  }
+}
+
+.main-footer__content--smallest-padding {
+  padding-top: 18px;
+
+  @media (min-width: 660px) {
+    padding-top: 48px;
+  }
+
+  @media (min-width: 768px) {
+    padding-top: 33px;
+    padding-bottom: 72px;
   }
 }
 

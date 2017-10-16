@@ -3,12 +3,12 @@
   margin-bottom: 30px;
 
   font-size: $third-font-size;
-  line-height: $base-line-height;
+  line-height: $seventh-line-height;
   font-weight: 300;
   text-align: center;
 
   @media (min-width: 660px) {
-    margin-bottom: 40px;
+    margin-bottom: 35px;
     font-size: $fourth-font-size;
     line-height: $fourth-line-height;
   }
@@ -38,5 +38,11 @@
   @media (min-width: 660px) {
     font-size: $seventh-font-size;
     line-height: $sixth-line-height;
+  }
+}
+
+.promo-text--margin {
+  @media (min-width: 768px) {
+    margin-bottom: 45px;
   }
 }
