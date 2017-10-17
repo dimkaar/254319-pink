@@ -546,18 +546,15 @@ input[type="radio"]:checked + .form__label--radio {
     z-index: 1;
     position: absolute;
     top: 10px;
-    left: 32%;
+    left: 50%;
+    transform: translate(-50%);
 
     display: block;
-    width: 30%;
     margin: 0 auto -10px;
     padding: 0 3%;
   }
 
   @media (min-width: 768px) {
-
-
-    width: 22%;
     margin: 0;
   }
 }
