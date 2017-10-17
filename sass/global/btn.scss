@@ -41,4 +41,20 @@
   border-radius: 3px;
 
   font-size: $secondary-font-size;
+
+  &:hover {
+    color: white;
+
+    background-color: $darken-green;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+
+    background-color: $darken-green;
+  }
+}
+
+.btn--disabled {
+  background-color: $light-grey;
 }
