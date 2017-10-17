@@ -100,17 +100,14 @@
 }
 
 .nav-list__link--active {
-  display: inline-block;
-  width: auto;
-  padding-bottom: 5px;
-  margin: 0 auto -10px;
-  box-sizing: border-box;
-
-  border-bottom: 2px solid white;
-
   @media (min-width: 768px) {
+    display: inline-block;
+    width: auto;
     padding-bottom: 10px;
     margin: 0 auto -6px;
+    box-sizing: border-box;
+
+    border-bottom: 2px solid white;
   }
 }
 
