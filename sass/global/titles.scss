@@ -6,9 +6,4 @@
   font-weight: bold;
   color: black;
   text-align: center;
-
-  @media (min-width: 660px) {
-    font-size: $fifth-font-size;
-    line-height: $eighth-line-height;
-  }
 }
