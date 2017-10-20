@@ -79,7 +79,7 @@
 }
 
 .form__group--contacts {
-  padding-top: 32px;
+  padding-top: 12px;
 
   @media (min-width: 660px) {
     order: 3;
@@ -101,7 +101,7 @@
 }
 
 .form__group--emotions {
-  padding-top: 32px;
+  padding-top: 12px;
   padding-bottom: 48px;
 
   @media (min-width: 660px) {
@@ -187,7 +187,7 @@
 
 .form__container--achievement {
   @media (min-width: 660px) {
-    padding: 45px 8.8% 52px;
+    padding: 52px 8.8%;
   }
 
   @media (min-width: 768px) {
@@ -198,7 +198,7 @@
 
 .form__container--emotions {
   @media (min-width: 660px) {
-    padding: 23px 8.8% 51px;
+    padding: 46px 8.8% 51px;
   }
 
   @media (min-width: 768px) {
@@ -219,6 +219,7 @@
   margin-top: 20px;
   margin-bottom: 5px;
   padding-left: 8%;
+  box-sizing: border-box;
 
   color: $pink;
   text-transform: uppercase;
@@ -230,6 +231,7 @@
   }
 
   @media (min-width: 768px) {
+    min-width: 54px;
     padding-right: 4.2%;
   }
 }
@@ -240,10 +242,6 @@
   @media (min-width: 660px) {
     margin-top: 3px;
   }
-}
-
-.form__label--no-margin {
-  margin-top: 0;
 }
 
 .form__label--no-padding {
@@ -475,32 +473,25 @@ input[type="radio"]:checked + .form__label--radio {
   text-transform: uppercase;
 
   @media (min-width: 660px) {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+
     display: inline-block;
     vertical-align: middle;
     width: auto;
-    margin: -55px auto 45px;
     padding: 0 6%;
 
     white-space: nowrap;
 
     background-color: white;
+
+    transform: translateX(-50%);
   }
 
   @media (min-width: 768px) {
-    position: absolute;
-    top: -10px;
-
     margin: 0;
     padding: 0 4%;
-  }
-}
-
-.form__text--title-width {
-  @media (min-width: 768px) {
-    left: 50%;
-
-    width: 40%;
-    margin-left: calc(-48% / 2);
   }
 }
 
@@ -530,12 +521,7 @@ input[type="radio"]:checked + .form__label--radio {
   margin-bottom: 5px;
 
   @media (min-width: 660px) {
-    margin-top: -40px;
-    margin-bottom: 32px;
-  }
-
-  @media (min-width: 768px) {
-    margin-top: -6px;
+    top: -15px;
   }
 }
 
@@ -544,18 +530,14 @@ input[type="radio"]:checked + .form__label--radio {
 
   @media (min-width: 660px) {
     z-index: 1;
-    position: absolute;
     top: 10px;
-    left: 50%;
-    transform: translate(-50%);
 
     display: block;
-    margin: 0 auto -10px;
-    padding: 0 3%;
+    padding: 0 6%;
   }
 
   @media (min-width: 768px) {
-    margin: 0;
+    padding: 0 3%;
   }
 }
 
