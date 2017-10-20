@@ -79,4 +79,6 @@
 .map-block__substitution-text {
   position: absolute;
   z-index: -1;
+
+  @include text-indent;
 }
