@@ -37,10 +37,12 @@
 }
 
 .section-info__title {
+  max-width: 280px;
   margin: 18px 0 12px;
 
   @media (min-width: 660px) {
     width: 100%;
+    max-width: 310px;
     margin: 22px 0 12px;
 
     text-align: left;
@@ -77,6 +79,7 @@
 }
 
 .section-info__text {
+  width: 100%;
   max-width: 280px;
   margin-top: 0;
   margin-bottom: 13px;
@@ -94,7 +97,6 @@
 
     order: 3;
     width: 32%;
-    max-width: 300px;
     padding: 0 3%;
     box-sizing: border-box;
 
