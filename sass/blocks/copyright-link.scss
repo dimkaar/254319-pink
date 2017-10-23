@@ -9,24 +9,28 @@
   @media (min-width: 768px) {
     font-size: $secondary-font-size;
   }
-}
 
-.copyright-link__img {
-  width: 42px;
-  height: 42px;
-
-  margin-left: 8px;
-  margin-right: -8px;
-
-
-  fill: $pink;
+  .copyright-link__img {
+    fill: $pink;
+  }
 
   &:hover {
-    fill: $navy;
+    .copyright-link__img {
+      fill: $navy;
+    }
   }
 
   &:active {
-    fill: $navy;
-    opacity: 0.3;
+    .copyright-link__img {
+      fill: $navy;
+      opacity: 0.3;
+    }
   }
+}
+
+.copyright-link__img {
+  width: 27px;
+  height: 33px;
+
+  margin-left: 14px;
 }

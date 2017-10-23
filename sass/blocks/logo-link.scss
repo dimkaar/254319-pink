@@ -1,19 +1,9 @@
 .logo-link {
   display: inline-block;
   vertical-align: middle;
-  width: 75px;
-  height: 22px;
 
   font-size: 0;
   line-height: 0;
-
-  .logo-link__img {
-    width: 75px;
-    height: 22px;
-
-    font-size: $base-font-size;
-    line-height: $base-line-height;
-  }
 
   &:hover {
     .logo-link__img {
@@ -23,56 +13,25 @@
 
   &:active {
     .logo-link__img {
-      fill: $light-grey;
+      fill: white;
+    }
+
+    .logo-link__img--footer {
+      fill: $navy;
+      opacity: 0.3;
+    }
+
+    .logo-link__pink {
       opacity: 0.3;
     }
   }
 
   @media (min-width: 660px) {
-    width: 150px;
-    height: 41px;
-
-    .logo-link__img {
-      width: 150px;
-      height: 41px;
-      margin-top: -8px;
-    }
+    margin-top: -13px;
   }
 
   @media (min-width: 768px) {
-    height: 40px;
-
-    .logo-link__img {
-      height: 40px;
-    }
-  }
-}
-
-.logo-link__img--mobile {
-  display: inline-block;
-
-  @media (min-width: 660px) {
-    display: none;
-  }
-}
-
-.logo-link__img--tablet {
-  display: none;
-
-  @media (min-width: 660px) {
-    display: inline-block;
-  }
-
-  @media (min-width: 768px) {
-    display: none;
-  }
-}
-
-.logo-link__img--desktop {
-  display: none;
-
-  @media (min-width: 768px) {
-    display: inline-block;
+    margin-top: -15px;
   }
 }
 
@@ -93,5 +52,82 @@
   @media (min-width: 660px) {
     margin-top: -4px;
     margin-bottom: 0;
+  }
+}
+
+.logo-link__img {
+  width: 146px;
+  height: 41px;
+  margin-left: -72px;
+  margin-top: -22px;
+
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+
+  fill: white;
+
+  @media (min-width: 660px) {
+    margin-top: 0;
+    margin-left: 0;
+  }
+}
+
+.logo-link__img--footer {
+  margin-left: 0;
+  margin-top: 0;
+
+  @media (min-width: 660px) {
+    margin-top: -8px;
+  }
+}
+
+.logo-link__img--tablet-blue {
+  display: inline-block;
+  vertical-align: middle;
+
+  fill: $navy;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.logo-link__img--desktop-blue {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: inline-block;
+    vertical-align: middle;
+
+    fill: $navy;
+  }
+}
+
+.logo-link__pink {
+  display: inline-block;
+  vertical-align: middle;
+
+  text-align: left;
+}
+
+.logo-link__glasses {
+  display: none;
+
+  @media (min-width: 660px) {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.logo-link__glasses-magic {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: inline-block;
+    vertical-align: middle;
   }
 }
