@@ -77,19 +77,24 @@
 }
 
 .section-info__text {
+  max-width: 280px;
   margin-top: 0;
   margin-bottom: 13px;
 
   text-align: center;
 
   @media (min-width: 660px) {
+    max-width: 310px;
+
     text-align: left;
   }
 
   @media (min-width: 768px) {
     position: relative;
+
     order: 3;
     width: 32%;
+    max-width: 300px;
     padding: 0 3%;
     box-sizing: border-box;
 
