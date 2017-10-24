@@ -53,6 +53,8 @@
 }
 
 .product__feature {
+  position: relative;
+
   margin: 0;
 
   line-height: $third-line-height;
@@ -79,7 +81,7 @@
   }
 
   &::before {
-    top: 28px;
+    top: 14px;
     right: 14px;
 
     width: 29px;
@@ -88,7 +90,7 @@
   }
 
   &::after {
-    top: 33px;
+    top: 19px;
     right: 35px;
 
     width: 14px;
@@ -106,13 +108,10 @@
     }
 
     &::before {
-      top: 20px;
       margin-right: -10px;
     }
 
     &::after {
-      top: 26px;
-
       margin-left: -6px;
     }
   }
@@ -127,13 +126,10 @@
     }
 
     &::before {
-      top: 30px;
       margin-right: -10px;
     }
 
     &::after {
-      top: 36px;
-
       margin-left: -6px;
     }
   }
@@ -144,7 +140,7 @@
   &::after {
     content: "";
     position: absolute;
-    top: 26px;
+    top: 14px;
     right: 16px;
 
     width: 34px;
@@ -166,7 +162,6 @@
 
     &::before,
     &::after {
-      top: 20px;
       left: 44%;
       right: 50%;
 
@@ -177,7 +172,6 @@
   @media (min-width: 768px) {
     &::before,
     &::after {
-      top: 29px;
       left: 46%;
       right: 50%;
 
