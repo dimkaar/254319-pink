@@ -171,14 +171,13 @@
 
   @media (min-width: 660px) {
     display: block;
+    max-width: 300px;
     padding: 0 10%;
     margin-bottom: 30px;
-
     box-sizing: border-box;
   }
 
   @media (min-width: 768px) {
-    max-width: 300px;
     margin-right: auto;
     margin-bottom: 52px;
     padding: 0 3%;
